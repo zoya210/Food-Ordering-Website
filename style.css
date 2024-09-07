@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#logo{
+    margin: 34px 45px;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(228, 202, 38);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo img{
+    height: 56px;
+    margin: 3px 5px;
+
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: orange;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: grey;
+    background-color: antiquewhite;
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+   
+        content: "";
+        background: url('https://images.unsplash.com/photo-1631515242808-497c3fbd3972?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1232&q=80') no-repeat center center/cover;
+        position: absolute;
+        height: 80%;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.89;
+    
+}
+#home h1{
+    color: wheat;
+    text-align: centerd;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#services{
+   margin: 14px;
+   display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 67px 6px;
+    border-radius: 28px;
+}
+#services .box img{
+    height: 140px;
+    padding: 85px 1px;
+    display: block;
+    margin: auto;
+}
+.services-container{
+    padding: 80px 2px;
+}
+#services .box p{
+    
+}
+#client-section{
+    position: relative;
+   
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('https://www.cypressgreen.in/blog/wp-content/uploads/2021/03/food.jpg');
+    width: 100%;
+    height: 35%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 120px;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.2rem;
+    padding: 12px;
+}
+.btn{
+    padding: 8px 20px;
+    border: 2px solid white;
+    background-color: whitesmoke;
+    color: orange;
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('https://media.istockphoto.com/id/1323765737/photo/close-up-of-a-businessman-using-a-laptop-computer-and-a-mobile-phone.jpg?s=612x612&w=is&k=20&c=jRiQUZ65rbwAYcPr_NckWdQ7lMMtjBT9MItpWS8HNjk=') no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color: whitesmoke;
+    padding: 5px 20px;
+}
+#contact-box input{}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+html{
+    scroll-behavior: smooth;
+}
